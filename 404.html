@@ -31,7 +31,7 @@
 			return document.getElementById(s);
 		}
 		document.addEventListener('DOMContentLoaded', function(e) {
-			let host = location.hostname; // can be: blog.zanstra.net; www.zanstra.net; zanstra.net
+			let host = 'zanstra.com';
 			let path = location.pathname;
 			$('link').href = 'https://'+host+path;
 			$('authority').innerText = 'https://'+host;
