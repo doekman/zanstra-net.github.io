@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Zanstra.net user-con</title>
+	<style>
+		#authority {
+			font-weight: bold;
+			color:#6a5acd; /*slateblue*/
+		}
+		#path {
+			color:#a69de1; /* 75% of 58%'s slateblue value: https://www.w3schools.com/colors/colors_picker.asp?colorhex=6A5ACD*/
+		}
+	</style>
+
+  
+</head>
+<body>
+	<h1>404 Not found & possibly 303 See other</h1>
+	<p>
+		The domain <strong>zanstra.net</strong> doesn't have an actual website.
+	</p>
+	<p>
+		Did you perhaps mean <a href="https://zanstra.com/" id="link"><span id="authority"></span><span id="path"></span></a>?
+	</p>
+	<p>
+		Thanks!
+	</p>
+	<script>
+		function $(s) {
+			return document.getElementById(s);
+		}
+		document.addEventListener('DOMContentLoaded', function(e) {
+			let host = location.hostname; // can be: blog.zanstra.net; www.zanstra.net; zanstra.net
+			let path = location.pathname;
+			$('link').href = 'https://'+host+path;
+			$('authority').innerText = 'https://'+host;
+			$('path').innerText = decodeURIComponent(path);
+		});
+	</script>
+</body>
+</html>
