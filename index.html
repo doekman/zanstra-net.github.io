@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Zanstra.net user-con</title>
+  <title>Nothing here on zanstra.net</title>
 	<style>
 		#authority {
 			font-weight: bold;
@@ -19,27 +19,15 @@
   
 </head>
 <body>
-	<h1>404 Not found & possibly 303 See other</h1>
+	<h1>200 Nothing here</h1>
 	<p>
 		The domain <strong>zanstra.net</strong> doesn't have an actual website.
 	</p>
 	<p>
-		Did you perhaps mean <a href="https://zanstra.com/" id="link"><span id="authority"></span><span id="path"></span></a>?
+		Did you perhaps mean <a href="https://zanstra.com/">zanstra.com</a> or <a href="https://blog.zanstra.com/">blog.zanstra.com</a>?
 	</p>
 	<p>
 		Thanks!
 	</p>
-	<script>
-		function $(s) {
-			return document.getElementById(s);
-		}
-		document.addEventListener('DOMContentLoaded', function(e) {
-			let host = location.hostname; // can be: blog.zanstra.net; www.zanstra.net; zanstra.net
-			let path = location.pathname;
-			$('link').href = 'https://'+host+path;
-			$('authority').innerText = 'https://'+host;
-			$('path').innerText = decodeURIComponent(path);
-		});
-	</script>
 </body>
 </html>
